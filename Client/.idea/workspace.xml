@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d11c315-cc0a-450b-aa71-408e6e63edc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnZodiac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnZodiac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/SpringZodiac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/SpringZodiac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/SummerZodiac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/SummerZodiac.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/WinterZodiac.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/WinterZodiac.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnCheckerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnCheckerImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
