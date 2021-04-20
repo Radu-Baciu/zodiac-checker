@@ -7,6 +7,10 @@
     <list default="true" id="1d11c315-cc0a-450b-aa71-408e6e63edc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnCheckerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/AutumnCheckerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/SpringCheckerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/SpringCheckerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/SummerCheckerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/SummerCheckerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/services/WinterCheckerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/services/WinterCheckerImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618880464038</updated>
       <workItem from="1618880465382" duration="1146000" />
-      <workItem from="1618907916212" duration="7272000" />
+      <workItem from="1618907916212" duration="8507000" />
     </task>
     <servers />
   </component>
@@ -106,5 +110,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

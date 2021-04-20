@@ -38,7 +38,7 @@ public class WinterCheckerImpl extends WinterCheckerGrpc.WinterCheckerImplBase {
         if (date.compareTo(zodiac[0][0]) >= 0)
             sign = zodiac[0][2];
 
-        ZodiacChecker.ZodiacReply reply = ZodiacChecker.ZodiacReply.newBuilder().setResult("Client with birth date " + request.getDate() + " is a " + sign).build();
+        ZodiacChecker.ZodiacReply reply = ZodiacChecker.ZodiacReply.newBuilder().setResult("Client with birth date " + request.getDate() + " is a(n) " + sign).build();
         responseObserver.onNext(reply);
         responseObserver.onCompleted();    }
 
