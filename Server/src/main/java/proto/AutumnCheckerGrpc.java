@@ -28,35 +28,35 @@ public final class AutumnCheckerGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest,
-      proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod;
+      proto.ZodiacChecker.ZodiacReply> getGiveInfoAutumnMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GiveInfo",
+      fullMethodName = SERVICE_NAME + '/' + "GiveInfoAutumn",
       requestType = proto.ZodiacChecker.ZodiacRequest.class,
       responseType = proto.ZodiacChecker.ZodiacReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest,
-      proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod() {
-    io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod;
-    if ((getGiveInfoMethod = AutumnCheckerGrpc.getGiveInfoMethod) == null) {
+      proto.ZodiacChecker.ZodiacReply> getGiveInfoAutumnMethod() {
+    io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply> getGiveInfoAutumnMethod;
+    if ((getGiveInfoAutumnMethod = AutumnCheckerGrpc.getGiveInfoAutumnMethod) == null) {
       synchronized (AutumnCheckerGrpc.class) {
-        if ((getGiveInfoMethod = AutumnCheckerGrpc.getGiveInfoMethod) == null) {
-          AutumnCheckerGrpc.getGiveInfoMethod = getGiveInfoMethod = 
+        if ((getGiveInfoAutumnMethod = AutumnCheckerGrpc.getGiveInfoAutumnMethod) == null) {
+          AutumnCheckerGrpc.getGiveInfoAutumnMethod = getGiveInfoAutumnMethod = 
               io.grpc.MethodDescriptor.<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "AutumnChecker", "GiveInfo"))
+                  "AutumnChecker", "GiveInfoAutumn"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.ZodiacChecker.ZodiacRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.ZodiacChecker.ZodiacReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new AutumnCheckerMethodDescriptorSupplier("GiveInfo"))
+                  .setSchemaDescriptor(new AutumnCheckerMethodDescriptorSupplier("GiveInfoAutumn"))
                   .build();
           }
         }
      }
-     return getGiveInfoMethod;
+     return getGiveInfoAutumnMethod;
   }
 
   /**
@@ -88,20 +88,20 @@ public final class AutumnCheckerGrpc {
 
     /**
      */
-    public void giveInfo(proto.ZodiacChecker.ZodiacRequest request,
+    public void giveInfoAutumn(proto.ZodiacChecker.ZodiacRequest request,
         io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getGiveInfoMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGiveInfoAutumnMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getGiveInfoMethod(),
+            getGiveInfoAutumnMethod(),
             asyncUnaryCall(
               new MethodHandlers<
                 proto.ZodiacChecker.ZodiacRequest,
                 proto.ZodiacChecker.ZodiacReply>(
-                  this, METHODID_GIVE_INFO)))
+                  this, METHODID_GIVE_INFO_AUTUMN)))
           .build();
     }
   }
@@ -126,10 +126,10 @@ public final class AutumnCheckerGrpc {
 
     /**
      */
-    public void giveInfo(proto.ZodiacChecker.ZodiacRequest request,
+    public void giveInfoAutumn(proto.ZodiacChecker.ZodiacRequest request,
         io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGiveInfoMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGiveInfoAutumnMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -153,9 +153,9 @@ public final class AutumnCheckerGrpc {
 
     /**
      */
-    public proto.ZodiacChecker.ZodiacReply giveInfo(proto.ZodiacChecker.ZodiacRequest request) {
+    public proto.ZodiacChecker.ZodiacReply giveInfoAutumn(proto.ZodiacChecker.ZodiacRequest request) {
       return blockingUnaryCall(
-          getChannel(), getGiveInfoMethod(), getCallOptions(), request);
+          getChannel(), getGiveInfoAutumnMethod(), getCallOptions(), request);
     }
   }
 
@@ -179,14 +179,14 @@ public final class AutumnCheckerGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.ZodiacChecker.ZodiacReply> giveInfo(
+    public com.google.common.util.concurrent.ListenableFuture<proto.ZodiacChecker.ZodiacReply> giveInfoAutumn(
         proto.ZodiacChecker.ZodiacRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGiveInfoMethod(), getCallOptions()), request);
+          getChannel().newCall(getGiveInfoAutumnMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_GIVE_INFO = 0;
+  private static final int METHODID_GIVE_INFO_AUTUMN = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -205,8 +205,8 @@ public final class AutumnCheckerGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GIVE_INFO:
-          serviceImpl.giveInfo((proto.ZodiacChecker.ZodiacRequest) request,
+        case METHODID_GIVE_INFO_AUTUMN:
+          serviceImpl.giveInfoAutumn((proto.ZodiacChecker.ZodiacRequest) request,
               (io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply>) responseObserver);
           break;
         default:
@@ -270,7 +270,7 @@ public final class AutumnCheckerGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new AutumnCheckerFileDescriptorSupplier())
-              .addMethod(getGiveInfoMethod())
+              .addMethod(getGiveInfoAutumnMethod())
               .build();
         }
       }

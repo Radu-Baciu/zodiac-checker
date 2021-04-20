@@ -3,16 +3,16 @@ syntax = "proto3";
 option java_package = "proto";
 
 service SpringChecker {
-  rpc GiveInfo (ZodiacRequest) returns (ZodiacReply) {}
+  rpc GiveInfoSpring (ZodiacRequest) returns (ZodiacReply) {}
 }
 service SummerChecker {
-  rpc GiveInfo (ZodiacRequest) returns (ZodiacReply) {}
+  rpc GiveInfoSummer (ZodiacRequest) returns (ZodiacReply) {}
 }
 service AutumnChecker {
-  rpc GiveInfo (ZodiacRequest) returns (ZodiacReply) {}
+  rpc GiveInfoAutumn (ZodiacRequest) returns (ZodiacReply) {}
 }
 service WinterChecker {
-  rpc GiveInfo (ZodiacRequest) returns (ZodiacReply) {}
+  rpc GiveInfoWinter (ZodiacRequest) returns (ZodiacReply) {}
 }
 
 message ZodiacRequest {

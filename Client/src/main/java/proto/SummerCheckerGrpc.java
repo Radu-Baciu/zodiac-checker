@@ -28,35 +28,35 @@ public final class SummerCheckerGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest,
-      proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod;
+      proto.ZodiacChecker.ZodiacReply> getGiveInfoSummerMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GiveInfo",
+      fullMethodName = SERVICE_NAME + '/' + "GiveInfoSummer",
       requestType = proto.ZodiacChecker.ZodiacRequest.class,
       responseType = proto.ZodiacChecker.ZodiacReply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest,
-      proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod() {
-    io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply> getGiveInfoMethod;
-    if ((getGiveInfoMethod = SummerCheckerGrpc.getGiveInfoMethod) == null) {
+      proto.ZodiacChecker.ZodiacReply> getGiveInfoSummerMethod() {
+    io.grpc.MethodDescriptor<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply> getGiveInfoSummerMethod;
+    if ((getGiveInfoSummerMethod = SummerCheckerGrpc.getGiveInfoSummerMethod) == null) {
       synchronized (SummerCheckerGrpc.class) {
-        if ((getGiveInfoMethod = SummerCheckerGrpc.getGiveInfoMethod) == null) {
-          SummerCheckerGrpc.getGiveInfoMethod = getGiveInfoMethod = 
+        if ((getGiveInfoSummerMethod = SummerCheckerGrpc.getGiveInfoSummerMethod) == null) {
+          SummerCheckerGrpc.getGiveInfoSummerMethod = getGiveInfoSummerMethod = 
               io.grpc.MethodDescriptor.<proto.ZodiacChecker.ZodiacRequest, proto.ZodiacChecker.ZodiacReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "SummerChecker", "GiveInfo"))
+                  "SummerChecker", "GiveInfoSummer"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.ZodiacChecker.ZodiacRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.ZodiacChecker.ZodiacReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new SummerCheckerMethodDescriptorSupplier("GiveInfo"))
+                  .setSchemaDescriptor(new SummerCheckerMethodDescriptorSupplier("GiveInfoSummer"))
                   .build();
           }
         }
      }
-     return getGiveInfoMethod;
+     return getGiveInfoSummerMethod;
   }
 
   /**
@@ -88,20 +88,20 @@ public final class SummerCheckerGrpc {
 
     /**
      */
-    public void giveInfo(proto.ZodiacChecker.ZodiacRequest request,
+    public void giveInfoSummer(proto.ZodiacChecker.ZodiacRequest request,
         io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getGiveInfoMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGiveInfoSummerMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getGiveInfoMethod(),
+            getGiveInfoSummerMethod(),
             asyncUnaryCall(
               new MethodHandlers<
                 proto.ZodiacChecker.ZodiacRequest,
                 proto.ZodiacChecker.ZodiacReply>(
-                  this, METHODID_GIVE_INFO)))
+                  this, METHODID_GIVE_INFO_SUMMER)))
           .build();
     }
   }
@@ -126,10 +126,10 @@ public final class SummerCheckerGrpc {
 
     /**
      */
-    public void giveInfo(proto.ZodiacChecker.ZodiacRequest request,
+    public void giveInfoSummer(proto.ZodiacChecker.ZodiacRequest request,
         io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGiveInfoMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGiveInfoSummerMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -153,9 +153,9 @@ public final class SummerCheckerGrpc {
 
     /**
      */
-    public proto.ZodiacChecker.ZodiacReply giveInfo(proto.ZodiacChecker.ZodiacRequest request) {
+    public proto.ZodiacChecker.ZodiacReply giveInfoSummer(proto.ZodiacChecker.ZodiacRequest request) {
       return blockingUnaryCall(
-          getChannel(), getGiveInfoMethod(), getCallOptions(), request);
+          getChannel(), getGiveInfoSummerMethod(), getCallOptions(), request);
     }
   }
 
@@ -179,14 +179,14 @@ public final class SummerCheckerGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<proto.ZodiacChecker.ZodiacReply> giveInfo(
+    public com.google.common.util.concurrent.ListenableFuture<proto.ZodiacChecker.ZodiacReply> giveInfoSummer(
         proto.ZodiacChecker.ZodiacRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGiveInfoMethod(), getCallOptions()), request);
+          getChannel().newCall(getGiveInfoSummerMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_GIVE_INFO = 0;
+  private static final int METHODID_GIVE_INFO_SUMMER = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -205,8 +205,8 @@ public final class SummerCheckerGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GIVE_INFO:
-          serviceImpl.giveInfo((proto.ZodiacChecker.ZodiacRequest) request,
+        case METHODID_GIVE_INFO_SUMMER:
+          serviceImpl.giveInfoSummer((proto.ZodiacChecker.ZodiacRequest) request,
               (io.grpc.stub.StreamObserver<proto.ZodiacChecker.ZodiacReply>) responseObserver);
           break;
         default:
@@ -270,7 +270,7 @@ public final class SummerCheckerGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new SummerCheckerFileDescriptorSupplier())
-              .addMethod(getGiveInfoMethod())
+              .addMethod(getGiveInfoSummerMethod())
               .build();
         }
       }

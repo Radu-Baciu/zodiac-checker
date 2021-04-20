@@ -1135,13 +1135,14 @@ public final class ZodiacChecker {
     java.lang.String[] descriptorData = {
       "\n\023ZodiacChecker.proto\"\035\n\rZodiacRequest\022\014" +
       "\n\004date\030\001 \001(\t\"\035\n\013ZodiacReply\022\016\n\006result\030\001 " +
-      "\001(\t2;\n\rSpringChecker\022*\n\010GiveInfo\022\016.Zodia" +
-      "cRequest\032\014.ZodiacReply\"\0002;\n\rSummerChecke" +
-      "r\022*\n\010GiveInfo\022\016.ZodiacRequest\032\014.ZodiacRe" +
-      "ply\"\0002;\n\rAutumnChecker\022*\n\010GiveInfo\022\016.Zod" +
-      "iacRequest\032\014.ZodiacReply\"\0002;\n\rWinterChec" +
-      "ker\022*\n\010GiveInfo\022\016.ZodiacRequest\032\014.Zodiac" +
-      "Reply\"\000B\007\n\005protob\006proto3"
+      "\001(\t2A\n\rSpringChecker\0220\n\016GiveInfoSpring\022\016" +
+      ".ZodiacRequest\032\014.ZodiacReply\"\0002A\n\rSummer" +
+      "Checker\0220\n\016GiveInfoSummer\022\016.ZodiacReques" +
+      "t\032\014.ZodiacReply\"\0002A\n\rAutumnChecker\0220\n\016Gi" +
+      "veInfoAutumn\022\016.ZodiacRequest\032\014.ZodiacRep" +
+      "ly\"\0002A\n\rWinterChecker\0220\n\016GiveInfoWinter\022" +
+      "\016.ZodiacRequest\032\014.ZodiacReply\"\000B\007\n\005proto" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
