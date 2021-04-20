@@ -61,15 +61,9 @@ public class Main {
         if (dayTest > 31 || dayTest < 0)
             return false;
         if (dayTest == 31) {
-            if (monthTest == 2)
+            if (monthTest < 7 && monthTest % 2 != 0)
                 return false;
-            if (monthTest == 4)
-                return false;
-            if (monthTest == 6)
-                return false;
-            if (monthTest == 9)
-                return false;
-            if (monthTest == 11)
+            if (monthTest > 8 && monthTest % 2 == 0)
                 return false;
         }
         if (dayTest == 30) {
